@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>{{ $title ?? 'Page Title' }}</title>
+        <link rel="stylesheet" href="/app.css">
     </head>
     <body>
+        <nav>
+            <a href="/" @class(['current' => request()->is('/')])>Todos</a>
+            <a href="/counter" @class(['current' => request()->is('counter')])>Counter</a>
+        </nav>
         {{ $slot }}
     </body>
 </html>
