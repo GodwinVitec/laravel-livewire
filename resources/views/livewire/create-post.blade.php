@@ -10,6 +10,8 @@
         <label for="body">
             <span>Content</span>
             <textarea wire:model="content"></textarea>
+            <span>Total Characters <small x-text="$wire.content.length"></small></span>
+            <span>Total Words <small x-text="$wire.content.length ? $wire.content.split(' ').length : 0"></small></span>
             @error('content') <em>{{ $message }}</em> @enderror
         </label>
         <button type="submit">Save</button>
