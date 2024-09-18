@@ -46,3 +46,15 @@ th, td {
 th:first-child, td:first-child {
     padding-right: 10px;
 }
+
+
+label, label span, label input {
+    display: block;
+    margin-top: 10px;
+}
+
+label em {
+    display: block;
+    font-size: 0.8em;
+    color: #730505;
+}
