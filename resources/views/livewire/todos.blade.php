@@ -3,8 +3,6 @@
     <form wire:submit="add">
         <input wire:model="todo" type="text">
         <button type="submit" wire:click="add">Add</button>
-        <br>
-        <span>Current: {{$todo}}</span>
     </form>
 
     <ul>
