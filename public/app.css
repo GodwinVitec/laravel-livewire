@@ -24,3 +24,25 @@ a.current {
     color: #f0f0f0;
     font-weight: bolder;
 }
+
+thead > tr {
+    background-color: #918e8e;
+    border-bottom: #2d3748 2px solid;
+}
+
+tbody tr td {
+    border-bottom: #696d73 2px solid;
+}
+
+table {
+    border-spacing: 0 !important;
+}
+
+th, td {
+    text-align: left;
+    padding: 4px 6px;
+}
+
+th:first-child, td:first-child {
+    padding-right: 10px;
+}
