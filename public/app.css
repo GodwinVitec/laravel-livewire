@@ -47,6 +47,11 @@ th:first-child, td:first-child {
     padding-right: 10px;
 }
 
+tr.archived {
+    background: #696d73;
+    color: white;
+}
+
 
 label, label span, label input {
     display: block;

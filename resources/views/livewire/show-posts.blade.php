@@ -11,18 +11,7 @@
         </thead>
         <tbody>
             @foreach ($posts as $post)
-                <tr wire:key="{{ $post->id }}">
-                    <td>{{ $post->title }}</td>
-                    <td>{{ str($post->content)->words(8) }}</td>
-                    <td>
-                        {{--<button wire:click="edit({{ $post->id }})">Edit</button>--}}
-                        <button
-                            type="button"
-                            wire:click="delete({{ $post->id }})"
-                            wire:confirm="Are you sure you want to delete this post?"
-                        >Delete</button>
-                    </td>
-                </tr>
+                <livewire:post-row :$post :key="$post->id" />
             @endforeach
         </tbody>
     </table>
