@@ -33,7 +33,7 @@ class CreatePost extends Component
         ]);
 
         /*return redirect()->to('/posts');*/
-        $this->redirect('/posts');
+        $this->redirect('/posts', navigate: true);
     }
 
     public function render()
